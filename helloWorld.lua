@@ -50,4 +50,16 @@ end
 
 greeting('John Doe')
 
+function printTable(t)
+  for k, v in pairs(t) do
+    print(k, v)
+  end
+end
+
 -- Lua Tables
+local avengers = {'Ironman', 'Hulk', 'Thor'}
+local person = {name='Tristan', eyeColor='blue'}
+print(avengers) -- this will only print the memory hash of the table.
+printTable(avengers)
+table.insert(avengers, 'Black Widow')
+printTable(avengers)
